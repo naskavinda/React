@@ -1,9 +1,18 @@
+import './App.css'
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import ThemeProvider from './providers/ThemeProvider';
+
 function App() {
+
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+    <ThemeProvider>
+      <div className="app">
+        <Navbar />
+        <MainContent />
+      </div>
+    </ThemeProvider>
+  );
 }
 
 export default App
